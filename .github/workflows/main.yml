@@ -2,6 +2,9 @@ name: Build example application
 
 on:
   pull_request:
+    branches:
+      - development
+      - master
   push:
 
 jobs: 
@@ -16,6 +19,7 @@ jobs:
         target: [K64F, DISCO_L475VG_IOT01A, NRF52840_DK]
         profile: [release, debug, develop]
         
+
 
     steps:
       -
