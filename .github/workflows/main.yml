@@ -2,6 +2,8 @@ name: Build example application
 
 on:
   pull_request:
+    - development
+    - master
   push:
 
 jobs: 
